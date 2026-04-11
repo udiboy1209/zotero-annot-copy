@@ -1,15 +1,15 @@
 {
-	"manifest_version": 2,
-	"name": "Zotero Annotation Copy",
-	"version": "0.1",
-	"description": "Copy annotation data and links in the Obsidian format.",
-	"homepage_url": "TODO",
-	"applications": {
-		"zotero": {
-			"id": "zotero-annot-copy@mudeshi.in",
-			"update_url": "TODO",
-			"strict_min_version": "7.0",
-			"strict_max_version": "7.1.*"
-		}
-	}
+    "manifest_version": 2,
+    "name": "Zotero Annotation Copy",
+    "version": "0.1",
+    "description": "Copy annotation data and links in the Obsidian format.",
+    "homepage_url": "https://github.com/udiboy1209/zotero-annot-copy",
+    "applications": {
+        "zotero": {
+            "id": "zotero-annot-copy@mudeshi.in",
+            "update_url": "https://github.com/udiboy1209/zotero-annot-copy/releases/latest/download/updates.json",
+            "strict_min_version": "7.0",
+            "strict_max_version": "7.1.*"
+        }
+    }
 }

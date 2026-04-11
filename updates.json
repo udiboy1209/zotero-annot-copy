@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "zotero-annot-copy@mudeshi.in": {
+            "updates": [
+                {
+                    "version": "0.1",
+                    "update_link": "https://github.com/udiboy1209/zotero-annot-copy/releases/download/v0.1/zotero-annot-copy.xpi"
+                }
+            ]
+        }
+    }
+}

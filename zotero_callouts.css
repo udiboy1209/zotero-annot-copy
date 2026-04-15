@@ -1,0 +1,211 @@
+/* Generator python code:
+ 
+from itertools import product
+cmap = {'yellow': '255,212,0', 'red': '255,102,102', 'green': '95,178,54', 'blue': '46,168,229', 'purple': '162,138,229', 'magenta': '229,110,238', 'orange': '241,152,55', 'gray': '170,170,170'}
+atypes = {"highlight": "lucide-highlighter", "note": "lucide-notepad-text", "underline": "lucide-underline", "image": "lucide-image", "ink": "lucide-line-squiggle"}
+for (a, i), (c, ch) in product(atypes.items(), cmap.items()):
+    print(f"""
+.callout[data-callout="zotero-{a}-{c}"] {{
+    --callout-color: {ch};
+    --callout-icon: {i};
+}}""")
+*/
+.callout[data-callout="zotero-highlight-yellow"] {
+    --callout-color: 255,212,0;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-red"] {
+    --callout-color: 255,102,102;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-green"] {
+    --callout-color: 95,178,54;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-blue"] {
+    --callout-color: 46,168,229;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-purple"] {
+    --callout-color: 162,138,229;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-magenta"] {
+    --callout-color: 229,110,238;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-orange"] {
+    --callout-color: 241,152,55;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-highlight-gray"] {
+    --callout-color: 170,170,170;
+    --callout-icon: lucide-highlighter;
+}
+
+.callout[data-callout="zotero-note-yellow"] {
+    --callout-color: 255,212,0;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-red"] {
+    --callout-color: 255,102,102;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-green"] {
+    --callout-color: 95,178,54;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-blue"] {
+    --callout-color: 46,168,229;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-purple"] {
+    --callout-color: 162,138,229;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-magenta"] {
+    --callout-color: 229,110,238;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-orange"] {
+    --callout-color: 241,152,55;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-note-gray"] {
+    --callout-color: 170,170,170;
+    --callout-icon: lucide-notepad-text;
+}
+
+.callout[data-callout="zotero-underline-yellow"] {
+    --callout-color: 255,212,0;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-red"] {
+    --callout-color: 255,102,102;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-green"] {
+    --callout-color: 95,178,54;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-blue"] {
+    --callout-color: 46,168,229;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-purple"] {
+    --callout-color: 162,138,229;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-magenta"] {
+    --callout-color: 229,110,238;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-orange"] {
+    --callout-color: 241,152,55;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-underline-gray"] {
+    --callout-color: 170,170,170;
+    --callout-icon: lucide-underline;
+}
+
+.callout[data-callout="zotero-image-yellow"] {
+    --callout-color: 255,212,0;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-red"] {
+    --callout-color: 255,102,102;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-green"] {
+    --callout-color: 95,178,54;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-blue"] {
+    --callout-color: 46,168,229;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-purple"] {
+    --callout-color: 162,138,229;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-magenta"] {
+    --callout-color: 229,110,238;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-orange"] {
+    --callout-color: 241,152,55;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-image-gray"] {
+    --callout-color: 170,170,170;
+    --callout-icon: lucide-image;
+}
+
+.callout[data-callout="zotero-ink-yellow"] {
+    --callout-color: 255,212,0;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-red"] {
+    --callout-color: 255,102,102;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-green"] {
+    --callout-color: 95,178,54;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-blue"] {
+    --callout-color: 46,168,229;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-purple"] {
+    --callout-color: 162,138,229;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-magenta"] {
+    --callout-color: 229,110,238;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-orange"] {
+    --callout-color: 241,152,55;
+    --callout-icon: lucide-line-squiggle;
+}
+
+.callout[data-callout="zotero-ink-gray"] {
+    --callout-color: 170,170,170;
+    --callout-icon: lucide-line-squiggle;
+}

@@ -12,7 +12,7 @@ The callout type is determined by annotation type and highlight colour, so diffe
 ### Example output
 
 ```markdown
-> [!PDF|yellow] [Page 42](zotero://open-pdf/library/items/XXXXXXXX?page=42&annotation=YYYYYYYY)
+> [!zotero-highlight-yellow] [Page 42](zotero://open-pdf/library/items/XXXXXXXX?page=42&annotation=YYYYYYYY)
 > This is the highlighted text.
 >
 > **Note:** A comment left on the annotation.
@@ -24,6 +24,7 @@ The callout type is determined by annotation type and highlight colour, so diffe
 2. In Zotero, go to **Tools → Add-ons**
 3. Click the gear icon and choose **Install Add-on From File...**
 4. Select the downloaded `.xpi` file
+5. Copy the `zotero_callouts.css` to Obsidian CSS snippets (generally `<your-vault>/.obsidian/snippets/`) and enable it to correctly format the copied callouts
 
 Requires Zotero 7.
 

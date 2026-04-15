@@ -7,29 +7,20 @@ const CONFIG = {
     menuLabelLink: "Copy Zotero Link",
 
     // Callout type used when an annotation type is not in the maps below.
-    defaultCalloutType: "PDF|note",
-
-    // Maps Zotero annotation types → Obsidian callout type.
-    // For "highlight" annotations, colorCalloutMap is checked first.
-    annotationCalloutMap: {
-        highlight: "PDF|highlight",
-        note:      "PDF|note",
-        underline: "PDF|underline",
-        image:     "PDF|image",
-        ink:       "PDF|ink",
-    },
+    defaultCalloutType: "zotero-highlight",
 
     // Maps Zotero highlight colours (hex) → Obsidian callout type.
     // Only used for "highlight" annotations; falls back to annotationCalloutMap.
     colorCalloutMap: {
-        "#ffd400": "PDF|yellow",
-        "#ff6666": "PDF|red",
-        "#5fb236": "PDF|green",
-        "#2ea8e5": "PDF|blue",
-        "#a28ae5": "PDF|purple",
-        "#e56eee": "PDF|magenta",
-        "#f19837": "PDF|orange",
-        "#aaaaaa": "PDF|gray",
+        "#ffd400": "yellow",
+        "#ff6666": "red",
+        "#5fb236": "green",
+        "#2ea8e5": "blue",
+        "#a28ae5": "purple",
+        "#e56eee": "magenta",
+        "#f19837": "orange",
+        "#aaaaaa": "gray",
+        "": "yellow",
     },
 
     // Prefix inserted before the annotation comment in the callout body.
@@ -105,9 +96,7 @@ ZoteroAnnotCopy = {
                     const page    = annotationItem.annotationPageLabel ?? "?";
                     const pageIdx = aPos.pageIndex + 1;
 
-                    const calloutType = (aType === "highlight" && CONFIG.colorCalloutMap[color])
-                        ? CONFIG.colorCalloutMap[color]
-                        : (CONFIG.annotationCalloutMap[aType] ?? CONFIG.defaultCalloutType);
+                    const calloutType = "zotero-" + aType + "-" + CONFIG.colorCalloutMap[color];
 
                     const uri = `zotero://open-pdf/library/items/${pdfItem.key}?page=${pageIdx}&annotation=${annotationItem.key}`;
 
